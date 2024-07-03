@@ -9,16 +9,15 @@
 <body>
     <div class="container">
         <h1>URL Shortener</h1>
-        <form id="shorten-form">
-            <label for="url-input">Enter a long URL to shorten:</label>
-            <input type="url" id="url-input" placeholder="Enter URL here..." required>
-            <button type="submit">Shorten URL</button>
+        <form id="url-form">
+            <input type="url" id="original-url" placeholder="Enter URL" required>
+            <button type="submit">Shorten</button>
         </form>
         <div id="result" class="hidden">
-            <p>Shortened URL:</p>
-            <a href="#" id="short-url" target="_blank"></a>
+            <p>Shortened URL: <a id="short-url" href="" target="_blank"></a></p>
         </div>
     </div>
-    <script src="scripts.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
+
