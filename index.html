@@ -4,20 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>URL Shortener</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
         <h1>URL Shortener</h1>
         <form id="url-form">
-            <input type="url" id="original-url" placeholder="Enter URL" required>
-            <button type="submit">Shorten</button>
+            <input type="url" id="urlInput" placeholder="Enter your URL here" required>
+            <button type="button" onclick="shortenURL()">Shorten</button>
         </form>
-        <div id="result" class="hidden">
-            <p>Shortened URL: <a id="short-url" href="" target="_blank"></a></p>
+        <div id="result" style="display:none;">
+            <p>Shortened URL:</p>
+            <div class="result-content">
+                <a id="shortenedURL" href="#" target="_blank"></a>
+                <button id="copy-button" onclick="copyToClipboard()">Copy</button>
+            </div>
         </div>
     </div>
     <script src="script.js"></script>
 </body>
 </html>
-
